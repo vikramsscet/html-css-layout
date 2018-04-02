@@ -1,0 +1,110 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.main{
+    background-color: cornsilk;
+    
+}
+.row1{
+    background-color: aqua;
+    position: relative;
+    padding: 5px;
+    border: 1px solid black;
+    min-height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+}
+.logo{
+    display: inline;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.menus{
+    display: inline;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}   
+.nav1{
+    position: relative;
+    top: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 2px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey;
+}
+.nav1:hover > .subNav{
+    display:inline-block;
+    z-index: 1;
+}
+.subNav{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 35px;
+    left: 15px;
+    background-color: cadetblue;
+}
+.subNav > div {
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid black;
+}
+.row2{
+    background-color: beige;
+    position: relative;
+    padding: 5px;
+    border: 1px solid black;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    
+}
+.sidenav{
+    padding: 5px;
+    border:1px solid black;
+    box-sizing: border-box;
+}
+.row3{
+    background-color: cyan;
+    position: relative;
+    padding: 5px;
+    border: 1px solid black;
+    height: 100px;
+    box-sizing: border-box;
+}
+.col{
+    padding: 5px;
+    margin: 5px;
+    display: inline;
+    float: left;
+    box-shadow: 5px 5px 5px grey;
+    background-color:bisque;
+    text-shadow: 0 0 3px #FF0000;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .row2{
+        flex-flow: column;
+    }
+    
+}
