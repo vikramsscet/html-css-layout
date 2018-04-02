@@ -17,35 +17,114 @@
     background-color: aliceblue;
 }
 .main1{
-    height: 100px;
+    
     background-color: antiquewhite;
     display: inline-flex;
     flex-flow: row;
 }
 .logo{
-    
+    padding: 5px;
+    margin: 10px;
+    background-color:fuchsia;
 }
 .menus{
     
 }
+.nav-level-1{
+    display: flex;
+    flex-flow: row;
+}
+.nav-level-1 > div{
+    padding: 5px;
+    margin: 15px;
+    background-color: coral;
+}
+
+.nav-level-1 > div:hover{
+    background-color:deepskyblue;
+}
+
+.subnav{
+    position: absolute;
+    display: none;
+    background-color: cornsilk;
+}
+.subnav>div{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    
+}
+.subnav>div:hover{
+    background-color: chartreuse;
+    
+}
+.nav-level-1:hover > div > .subnav {
+    display: inline-block;
+}
 .main2{
     height: 400px;
-    background-color:aqua;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
 }
 .leftCol{
-    display: inline-flex;
+    display: flex;
     background-color: azure;
+    box-shadow: 5px 5px 5px grey;
+    margin: 5px;
+    flex-direction: column;
+}
+.leftCol > div{
+    margin: 5px;
+    padding: 5px;
+}
+.leftCol > div:hover{
+    background-color: burlywood;
+}
+.leftCol > div:hover > .subNav{
+    position: absolute;
+    display: inline-block;
+    
+}
+.subNav{
+    display: none;
+    background-color: aqua;
+    
+}
+.subNav > div{
+    margin: 5px;
+    padding: 5px;
+}
+.subNav > div:hover{
+    border: 1px solid black;
+    background-color: cornsilk;
 }
 .centerCol{
     display: inline-flex;
     background-color:beige;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: 5px 5px 5px grey;
+    margin: 5px;
+}
+.smallbox{
+    display: inline-block;
+    height: 60px;
+    min-width: 100px;
+    border: 1px black solid;
+    background-color: darkcyan;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 5px 5px 5px grey;
 }
 .rightCol{
     display: inline-flex;
-    background-color:blanchedalmond;
+    background-color:aqua;
+    box-shadow: 5px 5px 5px grey;
+    margin: 5px;
 }
 .main3{
     height: 100px;
